@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgba(171, 165, 165, 0.962);
+    line-height: 1.6;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.901);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 350px auto;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.left,
+.right {
+    background-color: rgba(60, 58, 58, 0.829);
+    border: 1px solid rgba(255, 255, 255, 0.205);
+    border-radius: 4px;
+}
+
+
+/* left-section */
+.left {
+    height: 90vh;
+    position: sticky;
+    top: 40px;
+}
+.left-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.left-1 img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.left-1 h2{
+    color: white;
+    font-weight: 800;
+}
+.left-1 span{
+    color: rgb(210, 154, 13);
+    background-color: rgba(18, 17, 17, 0.596);
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.318);
+}
+.line{
+    border: 1px solid rgba(255, 255, 255, 0.226);
+    width: 100%;
+    margin-top: 20px;
+}
+.left-2{
+    padding:0px 40px;
+}
+.left-2 a{
+    color: rgb(154, 149, 149);
+    text-decoration: none;
+}
+.left-2 p{
+    color: rgb(154, 149, 149);
+}
+
+.left-3{
+    display: flex;
+    gap: 10px;
+    padding: 20px 40px;
+}
+.left-3 a svg{
+    height: 30px;
+    fill: white;
+}
+/* right-section */
+.right {
+    /* height: 90vh; */
+    padding: 30px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding:0px 10px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(160, 157, 157);
+    font-weight: 600;
+}
+.nav a:hover{
+    color: rgb(210, 154, 13);
+}
+
+.main-container{
+    padding: 20px;
+}
+
+.main-container h1{
+    font-weight: 900;
+    color: white;
+}
+.half-line{
+    border: 3px solid rgb(210, 154, 13);
+    width: 60px;
+    margin: 10px 0px;
+}
+
+
+
+/* skills */
+#skills{
+    padding: 30px 0px;
+}
+.skills-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    padding: 20px 0px;
+
+}
+.skills-card .card-svg svg{
+    height: 100px;
+    fill: rgb(210, 154, 13);
+}
+
+
+/* education */
+.edu{
+    position: relative;
+}
+.edu h2{
+    color:rgb(216, 211, 211);
+}
+.edu-top,.edu-bot{
+    padding: 20px 30px;
+    position: relative;
+}
+
+.circle{
+    height: 15px;
+    width: 15px;
+    border: 3px solid rgb(210, 154, 13);
+    border-radius: 50%;
+    position: absolute;
+    top: 25;
+    left: 0;
+    z-index: 10;
+}
+
+.liner{
+    border: 1px solid rgb(102, 99, 99);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 6;
+}
+
+
+/* portfolio */
+#portfolio{
+    margin-top: 40px;
+}
+.portfolio-wrapper{
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.portfolio-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    gap: 5px;
+    padding: 20px 0px;
+    background-color: rgba(15, 14, 14, 0.757);
+    border-radius: 10px;
+}
+.portfolio-card img{
+    object-fit: cover;
+    height: 180px;
+    width: 100%;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+.port-bot{
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.port-bot span{
+    color:white;
+    font-weight: 700;
+}
+
+.technologies{
+    display: flex;
+    gap: 8px;
+
+}
+.portfolio-card .technologies span{
+    color: rgb(210, 154, 13);
+    background-color: rgba(18, 17, 17, 0.596);
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.905);
+}
+
+
+
+/* responsivenss */
+@media screen and (max-width:600px) {
+    .main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+}
+.portfolio-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skills-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+}
